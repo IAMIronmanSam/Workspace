@@ -41,6 +41,7 @@
 	}
 },
 	dom:function (target) {
+		$("#test").append($(target));
 		var z = $(target).text("hello");
 		var t =  $(target).text();
 		return t;

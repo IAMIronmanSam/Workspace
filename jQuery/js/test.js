@@ -45,7 +45,7 @@ test( "Division", function() {
 })
 module ("DOM")
 test("do some dom stuff",function() {
-    var actual1 = testnamspc.dom('p')  
+    var actual1 = testnamspc.dom('h1')  
     deepEqual(actual1,"hello");
     console.log("Dom Passed");
 })
