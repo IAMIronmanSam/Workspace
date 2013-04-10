@@ -45,9 +45,39 @@
 		var z = $(target).text("hello");
 		var t =  $(target).text();
 		return t;
+},
+	domstyle:function (target,color) {
+		$("#test").append($(target));
+		var z = $(target).css("background-color",color);
+		var t =  $(target).css("background-color");
+		console.log($(target).css("background-color"));
+		return t;
+},
+	domremove:function (target) {
+		$(target).detach();
+		var t = $("#test").length;
+		return t;
+},
+	domclass:function (target) {
+		$(target).addClass("testing");
+		var t = $(target).attr('class');
+		return t;
 }
 
 };
 
 testnamspc.subs('j');
+
+/*(function($){
+
+  $.fn.enumerate = function(start) {
+    if (typeof start !== "number") {
+      start = 1;
+    }
+    return this.each(function(i) {
+      $(this).prepend((start + i) + ". ");
+    });
+  };
+
+}(jQuery));*/
  //   });//
