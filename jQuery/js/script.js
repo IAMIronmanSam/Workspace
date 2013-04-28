@@ -62,7 +62,8 @@
 		$(target).addClass("testing");
 		var t = $(target).attr('class');
 		return t;
-}
+},
+	tstvar:["dfgmgdgg","sdfsdfj"]
 
 };
 
