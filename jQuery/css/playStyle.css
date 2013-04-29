@@ -1,14 +1,25 @@
-#Container{
-	width: 500px;
-	height: 500px;
-	background-color: black;
+body{
+	font-size: 25px;
+	font-weight: 800
+}
 
+#Container{
+	width: 700px;
+	height: 400px;
+	background-color: violet;
+	margin-top: 10%;
+	margin-left: 20%;
+}
+#Container i{
+	padding: 70px;
+	margin: 80px;
 }
 #Board{
 	width: 275px;
 	height: 275px;
 	background-color: yellow;
 	margin: 20px;
+	float: left;
 }
 
 .dots{
@@ -17,8 +28,32 @@
 	border-radius: 10px;margin: 20px;display: inline-block;
     box-shadow: 10px 10px 5px #888888;font-size: 20px;
     color: white;font-weight: 800;
+    cursor: default;
 }
 
-#Container #Board #ip{
+#ip{
 	float: right;
+	width: 45%;
+	padding: 10px;
+	box-shadow: 10px 10px 5px #5b5b5b;
+	background-color: #68b553;
+	margin: 20px;
+	display:inline;
+	font-size: 25px;
+}
+#ip input[type=text]{
+	display: block;
+	margin-left: 20px;
+	height: 30px;
+}
+#ip input[type=button]{
+	width: 90px;
+	height: 50px;
+	margin: 10px;
+	float: right;
+	display: inline-block;
+}
+#ip input[type=button]:hover{
+	background-color: red;
+	color: white;
 }
