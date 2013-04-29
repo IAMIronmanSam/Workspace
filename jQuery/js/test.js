@@ -190,3 +190,8 @@ test("Dom add Class stuff",function() {
     deepEqual(actual1,'testing',"DOM Class Added");
 })
 
+module("Pattern Check")
+test("Pattern Test",function() {
+    var actual1 = Home.Welcome('sakthi')  
+    deepEqual(actual1,'sakthi',"Member Check");
+})
