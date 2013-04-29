@@ -57,3 +57,8 @@ body{
 	background-color: red;
 	color: white;
 }
+.line{
+	width: 10px;
+	height: 70px;
+	background-color: green;
+}

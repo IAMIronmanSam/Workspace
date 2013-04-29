@@ -10,7 +10,7 @@ Board = {
 		}
 	else{
 			for (var i = 1; i <=9; i++) {
-				$('#Container').append("<div class=\"dots\" id="+i+"></div>");
+				$('#Board').append("<div class=\"dots\" id="+i+"></div>");
 			}
 			alert("Maximun 9 is only allowed");
 		}
@@ -22,8 +22,13 @@ Board = {
 				return vue;
 			});
 			console.log("Co-Ordinates: "+vue);	
+			this.DrawLines(vue);
 	},
 	DrawLines:function  (_coord) {
+		for (var i = 1; i <=_coord.length ; i++) {
+			console.log("DrawLines"+_coord.length);
+			$('#'+_coord[i]).append("<div class=line></div>");
+		};
 		
 		
 	},
