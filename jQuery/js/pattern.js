@@ -9,15 +9,13 @@ Board = {
 			}
 		}
 	else{
-			for (var i = 1; i <=9; i++) {
-				$('#Board').append("<div class=\"dots\" id="+i+"></div>");
-			}
-			alert("Maximun 9 is only allowed");
+			console.log("Maximun 9 is only allowed");
 		}
 	},
 	getPosition:function  () {
 			var vue = [];
 			$("#ip input:text").each(function(){
+				
 				vue.push($(this).val());
 				return vue;
 			});
@@ -25,12 +23,25 @@ Board = {
 			this.DrawLines(vue);
 	},
 	DrawLines:function  (_coord) {
-		for (var i = 1; i <=_coord.length ; i++) {
-			console.log("DrawLines"+_coord.length);
-			$('#'+_coord[i]).append("<div class=line></div>");
+		console.log("Array"+_coord)
+		var net = [];
+		for (var i = 0; i <_coord.length ; i++) {
+			console.log("DrawLines"+_coord[i]);
+
+			if(_coord[i] %2 != 0 && _coord[i]!=5)
+			{
+				net.push(1);
+				console.log(_coord[i]);
+			}
+			else{
+				net.push(0);
+				
+			}
+
+			//$('#'+_coord[i]).append("<div class=line></div>");
 		};
-		
-		
+			console.log("Net: "+net.length);
+
 	},
 };
 
